@@ -1,9 +1,7 @@
 import pygame
 
-# Window
 WIDTH, HEIGHT = 800, 900
 
-# Themes
 LIGHT_THEME = {
     "bg": (245, 245, 245),
     "grid": (0, 0, 0),
@@ -23,7 +21,6 @@ DARK_THEME = {
     "highlight": (80, 80, 80)
 }
 
-# Palette (1-based keys)
 PALETTE = {i: pygame.Color(*c) for i, c in enumerate([
     (255,0,0),(0,255,0),(0,0,255),(255,255,0),
     (255,0,255),(0,255,255),(255,165,0),(128,0,128),
@@ -31,6 +28,5 @@ PALETTE = {i: pygame.Color(*c) for i, c in enumerate([
     (0,100,0),(70,130,180),(210,105,30),(75,0,130)
 ], start=1)}
 
-# Grid layout
 GRID_SIZE, CELL = 10, 50
 GRID_X, GRID_Y = 150, 120
