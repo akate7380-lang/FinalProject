@@ -9,13 +9,11 @@ from ui import (
 
 pygame.init()
 
-# Window + fonts
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Малюнок за номерами")
 FONT = pygame.font.SysFont(None, 26)
 BIG_FONT = pygame.font.SysFont(None, 48)
 
-# Game state
 theme = LIGHT_THEME
 level, player = reset_game()
 selected = 1
@@ -23,7 +21,6 @@ menu = True
 running = True
 clock = pygame.time.Clock()
 
-# Buttons
 theme_button = pygame.Rect(WIDTH-60,10,50,50)
 menu_button = pygame.Rect(10,10,120,40)
 
